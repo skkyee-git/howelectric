@@ -24,9 +24,72 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HowElectric — India's EV Charging Infrastructure Marketplace",
+  title: {
+    default: "HowElectric — India's EV Charging Infrastructure Platform",
+    template: "%s | HowElectric",
+  },
   description:
-    "The world's first EV charging infrastructure marketplace & consultancy platform. Discover, compare, and deploy EV charging solutions across India.",
+    "India's first EV charging infrastructure platform. Expert consulting, installation services, charge-point management software, and professional training — everything you need to build and scale EV charging networks.",
+  keywords: [
+    "EV charging",
+    "electric vehicle",
+    "charging station",
+    "EV infrastructure",
+    "EVSE",
+    "charge point operator",
+    "CPO",
+    "OCPP",
+    "EV consulting",
+    "EV installation",
+    "charging management software",
+    "CMS",
+    "India EV",
+    "HowElectric",
+  ],
+  authors: [{ name: "HowElectric", url: "https://howelectric.com" }],
+  creator: "HowElectric",
+  publisher: "HowElectric",
+  metadataBase: new URL("https://howelectric.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://howelectric.com",
+    siteName: "HowElectric",
+    title: "HowElectric — India's EV Charging Infrastructure Platform",
+    description:
+      "Expert consulting, installation services, charge-point management software, and professional training for EV charging infrastructure across India.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "HowElectric — Powering India's Electric Future",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HowElectric — India's EV Charging Infrastructure Platform",
+    description:
+      "Expert consulting, installation services, CMS software, and professional training for EV charging infrastructure across India.",
+    creator: "@howelectric",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "technology",
 };
 
 export default function RootLayout({
