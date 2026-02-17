@@ -61,22 +61,14 @@ export const metadata: Metadata = {
     title: "HowElectric — India's EV Charging Infrastructure Platform",
     description:
       "Expert consulting, installation services, charge-point management software, and professional training for EV charging infrastructure across India.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "HowElectric — Powering India's Electric Future",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@howelectric",
+    creator: "@howelectric",
     title: "HowElectric — India's EV Charging Infrastructure Platform",
     description:
       "Expert consulting, installation services, CMS software, and professional training for EV charging infrastructure across India.",
-    creator: "@howelectric",
-    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -88,6 +80,15 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  other: {
+    "theme-color": "#0A2647",
+    "msapplication-TileColor": "#0A2647",
+    "apple-mobile-web-app-title": "HowElectric",
+    "application-name": "HowElectric",
+    "mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
   },
   category: "technology",
 };
