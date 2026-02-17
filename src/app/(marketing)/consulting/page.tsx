@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { ConsultingHero } from "@/components/consulting/ConsultingHero";
 import { TierCards } from "@/components/consulting/TierCards";
 import { ProcessSteps } from "@/components/consulting/ProcessSteps";
@@ -6,6 +7,22 @@ import { ConsultingStats } from "@/components/consulting/ConsultingStats";
 import { UseCases } from "@/components/consulting/UseCases";
 import { CrossPillarSection } from "@/components/consulting/CrossPillarSection";
 import { CTABanner } from "@/components/shared/CTABanner";
+
+export const metadata: Metadata = {
+  title: "EV Charging Consulting Services",
+  description:
+    "Expert EV charging consulting — feasibility studies, site assessments, ROI analysis, and regulatory guidance. Self-serve to enterprise tiers available.",
+  keywords: ["EV consulting", "EV charging feasibility", "site assessment", "ROI analysis", "EV regulatory compliance", "charging infrastructure planning"],
+  openGraph: {
+    title: "EV Charging Consulting Services",
+    description: "Expert consulting for feasibility, site assessment, ROI analysis, and regulatory guidance across India.",
+    url: "/consulting",
+  },
+  twitter: {
+    title: "EV Charging Consulting Services",
+    description: "Expert consulting for feasibility, site assessment, ROI analysis, and regulatory guidance across India.",
+  },
+};
 
 export default function ConsultingPage() {
   return (

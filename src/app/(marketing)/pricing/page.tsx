@@ -1,8 +1,25 @@
+import type { Metadata } from "next";
 import { PricingHero } from "@/components/pricing/PricingHero";
 import { PillarPricingCards } from "@/components/pricing/PillarPricingCards";
 import { BundleSavings } from "@/components/pricing/BundleSavings";
 import { PricingFAQ } from "@/components/pricing/PricingFAQ";
 import { CTABanner } from "@/components/shared/CTABanner";
+
+export const metadata: Metadata = {
+  title: "Pricing Plans",
+  description:
+    "Transparent pricing for EV charging consulting, installation services, CMS software, and academy training. Flexible plans from self-serve to enterprise.",
+  keywords: ["EV charging pricing", "installation cost", "CMS pricing", "consulting fees", "EV training cost", "HowElectric plans"],
+  openGraph: {
+    title: "Pricing Plans",
+    description: "Transparent pricing for consulting, installation, CMS, and academy services.",
+    url: "/pricing",
+  },
+  twitter: {
+    title: "Pricing Plans",
+    description: "Transparent pricing for consulting, installation, CMS, and academy services.",
+  },
+};
 
 export default function PricingPage() {
   return (
